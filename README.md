@@ -1,3 +1,5 @@
-# fruit-shop-task
+# Fruit Shop
 
-Published at: https://armia13.github.io/fruit-shop-task/
+Cart made with JavaScript
+
+Published at: https://armia13.github.io/fruit-shop/
