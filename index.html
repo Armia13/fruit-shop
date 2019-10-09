@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/16-red-apple-png-image.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <title>Fruit Shop</title>
+</head>
+
+<body>
+    <header>
+        <h1>Fruit Shop</h1>
+    </header>
+    <section class="amount">
+        <h2>I have Rs. <input  class="my-amount" type="text" min="1"></h2>
+    </section>
+    <section class="total">
+        <h3>Your total is Rs. <span id="total-amount"></span></h3>
+    </section>
+    <section class="fruits">
+            <div class="apple-card">
+                <div class="price">
+                    <p>Rs. 10</p>
+                </div>
+                <figure>
+                    <img src="images/16-red-apple-png-image.png">
+                    <figcaption>Apple</figcaption>
+                </figure>
+                <div class="btn">
+                    <button class="subtract" onclick="decreaseApple()">-</button>
+                    <input type="text" id="apple"  value="0">
+                    <button onclick="increaseApple()" class="add">+</button>
+                </div>
+            </div>
+            <div class="orange-card">
+                <div class="price">
+                    <p>Rs. 15</p>
+                </div>
+                <figure>
+                    <img src="images/1-2-orange-picture.png">
+                    <figcaption>Orange</figcaption>
+                </figure>
+                <div class="btn">
+                    <button class="subtract" onclick="decreaseOrange()">-</button>
+                    <input type="text" id="orange" value="0">
+                    <button onclick="increaseOrange()" class="add">+</button>
+                </div>
+            </div>
+            <div class="banana-card">
+                <div class="price">
+                    <p>Rs. 7</p>
+                </div>
+                <figure>
+                    <img src="images/4-2-banana-picture.png">
+                    <figcaption>Banana</figcaption>
+                </figure>
+                <div class="btn">
+                    <button class="subtract" onclick="decreaseBanana()">-</button>
+                    <input type="text" id="banana" value="0">
+                    <button class="add" onclick="increaseBanana()">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Made with <i class="fas fa-heart"></i> by <a href="https://github.com/Armia13">Armia fridi</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
